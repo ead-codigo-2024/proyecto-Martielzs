@@ -1,0 +1,234 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Fondo claro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabecera del destino */
+.destination-header {
+    text-align: center;
+    padding: 3rem;
+    background-color: #0056b3; /* Azul corporativo */
+    color: white;
+    border-bottom: 3px solid #e67e22; /* Línea decorativa */
+}
+
+/* Título principal */
+.destination-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Subtítulo */
+.destination-header p {
+    font-size: 1.2rem;
+}
+
+/* Contenido principal */
+.destination-content {
+    flex: 1;
+    padding: 3rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero de la página */
+.destination-hero {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.destination-hero .hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Información del destino */
+.destination-info h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.destination-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Listas de información */
+.destination-highlights, .destination-details {
+    margin-bottom: 2rem;
+}
+
+.destination-highlights ul, .destination-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.destination-highlights ul li, .destination-details ul li {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Galería de imágenes */
+.destination-gallery {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f7f7f7 30%, #0056b3 70%);
+    border-top: 5px solid #0056b3;
+}
+
+.destination-gallery h2 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 0 5%;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón "Contáctanos" */
+.contact-btn {
+    padding: 12px 30px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Formulario emergente */
+.contact-form {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté sobre todo */
+}
+
+.contact-form form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #0056b3;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    padding: 12px 30px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+
+.contact-form .close-form {
+    background-color: transparent;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.contact-form .close-form:hover {
+    color: #0056b3;
+}
+
+/* Pie de página */
+.destination-footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: 3px solid #e67e22;
+    font-size: 1rem;
+}
+
+.destination-footer p {
+    margin: 0;
+}

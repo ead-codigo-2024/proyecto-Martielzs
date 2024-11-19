@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valle de la Luna</title>
+    <link rel="stylesheet" href="estilos-valle.css">
+</head>
+<body>
+    <header class="destination-header">
+        <h1>Valle de la Luna</h1>
+        <p>
+            Sumérgete en uno de los paisajes más fascinantes y surrealistas de Chile, donde la tierra y el cielo se fusionan en un espectáculo inolvidable.
+        </p>
+    </header>
+
+    <main class="destination-content">
+        <section class="destination-hero">
+            <img src="imagenes1/Img-Valle-de-la-luna.jpg" alt="Vista panorámica del Valle de la Luna" class="hero-image">
+        </section>
+
+        <section class="destination-info">
+            <h2>Acerca del Valle de la Luna</h2>
+            <p>
+                Ubicado en el corazón del Desierto de Atacama, el Valle de la Luna es famoso por su extraordinaria geografía que recuerda a la superficie lunar.
+                Formado a lo largo de milenios por el viento y el agua, este paisaje ofrece una experiencia única llena de formaciones rocosas, dunas de arena y colores cambiantes
+                al atardecer.
+            </p>
+        </section>
+
+        <section class="destination-highlights">
+            <h2>¿Por qué visitar el Valle de la Luna?</h2>
+            <ul>
+                <li><strong>Atardeceres mágicos:</strong> Disfruta de vistas inolvidables mientras el sol tiñe el paisaje de tonos rojos, naranjas y dorados.</li>
+                <li><strong>Fotografía:</strong> Captura imágenes espectaculares de formaciones rocosas como Las Tres Marías y la Duna Mayor.</li>
+                <li><strong>Exploración:</strong> Recorre senderos que te llevarán a cavernas, miradores y cañones escondidos.</li>
+                <li><strong>Cercanía:</strong> A solo 13 km de San Pedro de Atacama, es un destino accesible y perfecto para una excursión de medio día.</li>
+            </ul>
+        </section>
+
+        <section class="destination-details">
+            <h2>Información útil</h2>
+            <ul>
+                <li><strong>Ubicación:</strong> Región de Antofagasta, a pocos minutos de San Pedro de Atacama.</li>
+                <li><strong>Clima:</strong> Seco y cálido durante el día, con temperaturas frescas al anochecer.</li>
+                <li><strong>Acceso:</strong> Se puede llegar en bicicleta, auto o mediante tours guiados desde San Pedro.</li>
+                <li><strong>Horarios:</strong> Abierto todos los días, generalmente de 8:00 a 20:00 hrs.</li>
+                <li><strong>Recomendación:</strong> Llevar agua, protector solar y ropa cómoda para caminar.</li>
+            </ul>
+        </section>
+
+        <section class="destination-gallery">
+            
+            <div class="gallery">
+                <img src="imagenes1/atardecervalle.jpg" alt="Atardecer en el Valle de la Luna">
+                <img src="imagenes1/dunas valle.webp" alt="Dunas del Valle de la Luna">
+                <img src="imagenes1/tresmariasvalle.webp" alt="Formación rocosa Las Tres Marías">
+                <img src="imagenes1/cuevas valle.jpg" alt="Cavernas en el Valle de la Luna">
+            </div>
+        </section>
+
+        <section class="destination-cta">
+            <h2>¡Planea tu visita ahora!</h2>
+            <p>No te pierdas la oportunidad de explorar este increíble destino.</p>
+            <button class="btn contact-btn" onclick="abrirFormulario()">Contáctanos</button>
+        </section>
+        
+        <!-- Formulario emergente -->
+        <div class="contact-form" id="contactForm">
+            <form>
+                <h2>Contáctanos</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        
+                <button type="submit">Enviar</button>
+                <button type="button" class="close-form" onclick="cerrarFormulario()">Cerrar</button>
+            </form>
+        </div>
+        <script>
+            function abrirFormulario() {
+                document.getElementById('contactForm').style.display = 'flex';
+            }
+        
+            function cerrarFormulario() {
+                document.getElementById('contactForm').style.display = 'none';
+            }
+        </script>
+                
+    </main>
+
+    <footer class="destination-footer">
+        <p>&copy; 2024 Horizontes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

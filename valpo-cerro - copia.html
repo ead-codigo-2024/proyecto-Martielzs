@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valparaíso</title>
+    <link rel="stylesheet" href="estilos-valpo.css">
+</head>
+<body>
+    <header class="destination-header">
+        <h1>Valparaíso</h1>
+        <p>
+            Descubre la magia de Valparaíso, la joya del Pacífico, con su rica historia, coloridos cerros y vibrante vida cultural.
+        </p>
+    </header>
+
+    <main class="destination-content">
+        <section class="destination-hero">
+            <img src="imagenes1/valpo.jpg" alt="Vista panorámica de Valparaíso" class="hero-image">
+        </section>
+
+        <section class="destination-info">
+            <h2>Acerca de Valparaíso</h2>
+            <p>
+                Valparaíso, declarada Patrimonio de la Humanidad por la UNESCO, es un puerto lleno de encanto con su singular arquitectura,
+                ascensores históricos y un ambiente bohemio que atrae a visitantes de todo el mundo. Sus cerros coloridos, estrechas calles
+                y arte callejero lo convierten en un destino único en Chile.
+            </p>
+        </section>
+
+        <section class="destination-highlights">
+            <h2>¿Por qué visitar Valparaíso?</h2>
+            <ul>
+                <li><strong>Arte callejero:</strong> Explora murales y grafitis en cerros como Alegre y Concepción.</li>
+                <li><strong>Ascensores:</strong> Viaja en los tradicionales funiculares que conectan la ciudad baja con los cerros.</li>
+                <li><strong>Paseos:</strong> Disfruta de vistas increíbles desde paseos emblemáticos como el Paseo 21 de Mayo y Gervasoni.</li>
+                <li><strong>Cultura:</strong> Visita museos como La Sebastiana, la casa de Pablo Neruda.</li>
+                <li><strong>Gastronomía:</strong> Prueba deliciosos platos de mariscos en restaurantes locales.</li>
+            </ul>
+        </section>
+
+        <section class="destination-details">
+            <h2>Información útil</h2>
+            <ul>
+                <li><strong>Ubicación:</strong> Región de Valparaíso, a 120 km de Santiago.</li>
+                <li><strong>Clima:</strong> Mediterráneo costero, con temperaturas suaves durante todo el año.</li>
+                <li><strong>Acceso:</strong> Fácil acceso en bus, tren o auto desde Santiago.</li>
+                <li><strong>Horarios:</strong> Atracciones abiertas generalmente entre las 9:00 y 19:00 hrs.</li>
+                <li><strong>Recomendación:</strong> Llevar zapatos cómodos para caminar por sus calles empinadas.</li>
+            </ul>
+        </section>
+
+        <section class="destination-gallery">
+            <h2>Galería de imágenes</h2>
+            <div class="gallery">
+                <img src="imagenes1/murales.jpg" alt="Murales en Valparaíso">
+                <img src="imagenes1/ascensores.jpg" alt="Ascensor en Valparaíso">
+                <img src="imagenes1/07.-Paseo-Gervasoni-1-1.jpg" alt="Paseo Gervasoni en Valparaíso">
+                <img src="imagenes1/_valparaisopuerto.jpg" alt="Puerto de Valparaíso">
+            </div>
+        </section>
+
+        <section class="destination-cta">
+            <h2>¡Planea tu visita ahora!</h2>
+            <p>No te pierdas la oportunidad de explorar este increíble destino.</p>
+            <button class="btn contact-btn" onclick="abrirFormulario()">Contáctanos</button>
+        </section>
+        
+        <!-- Formulario emergente -->
+        <div class="contact-form" id="contactForm">
+            <form>
+                <h2>Contáctanos</h2>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        
+                <button type="submit">Enviar</button>
+                <button type="button" class="close-form" onclick="cerrarFormulario()">Cerrar</button>
+            </form>
+        </div>
+        <script>
+            function abrirFormulario() {
+                document.getElementById('contactForm').style.display = 'flex';
+            }
+        
+            function cerrarFormulario() {
+                document.getElementById('contactForm').style.display = 'none';
+            }
+        </script>
+                
+    </main>
+
+    <footer class="destination-footer">
+        <p>&copy; 2024 Horizontes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
