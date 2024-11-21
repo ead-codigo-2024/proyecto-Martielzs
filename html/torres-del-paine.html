@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torres del Paine</title>
+    <link rel="stylesheet" href="estilos-torres.css"> <!-- Asegúrate de enlazar tu archivo CSS -->
+</head>
+
+<body>
+    <header class="destination-header">
+        <h1>Torres del Paine</h1>
+        <p>Explora uno de los lugares más icónicos de Chile, una maravilla natural que combina montañas, glaciares y lagos en un espectáculo inolvidable.</p>
+    </header>
+
+    <main class="destination-content">
+        <section class="destination-hero">
+            <img src="imagenes1/panoramica_tores_1920-1920x800.jpg" alt="Vista panorámica de Torres del Paine" class="hero-image">
+        </section>
+
+        <section class="destination-info">
+            <h2>Acerca de Torres del Paine</h2>
+            <p>
+                El Parque Nacional Torres del Paine, ubicado en la región de Magallanes y la Antártica Chilena, es un destino imperdible para los amantes de la naturaleza y la aventura. 
+                Sus majestuosas montañas, glaciares imponentes y aguas cristalinas lo convierten en un paraíso para senderistas, fotógrafos y exploradores.
+            </p>
+        </section>
+
+        <section class="destination-highlights">
+            <h2>¿Por qué visitar Torres del Paine?</h2>
+            <ul>
+                <li><strong>Senderismo:</strong> Explora rutas icónicas como el Circuito W o el Circuito O, que ofrecen vistas espectaculares.</li>
+                <li><strong>Fotografía:</strong> Captura paisajes de ensueño como el Lago Grey, el Glaciar Grey y los Cuernos del Paine.</li>
+                <li><strong>Fauna:</strong> Descubre especies únicas como guanacos, cóndores y zorros en su hábitat natural.</li>
+                <li><strong>Aventura:</strong> Disfruta de actividades como kayak, paseos a caballo y navegación en los lagos cercanos.</li>
+            </ul>
+        </section>
+
+        <section class="destination-details">
+            <h2>Información útil</h2>
+            <ul>
+                <li><strong>Ubicación:</strong> Región de Magallanes, a 112 km de Puerto Natales.</li>
+                <li><strong>Clima:</strong> Temperaturas entre 0°C y 15°C. Vientos fuertes son comunes.</li>
+                <li><strong>Acceso:</strong> Vuelos a Punta Arenas y traslados terrestres hacia el parque.</li>
+                <li><strong>Alojamiento:</strong> Hoteles, refugios y zonas de camping dentro y fuera del parque.</li>
+                <li><strong>Recomendación:</strong> Llevar ropa impermeable y calzado adecuado para caminatas largas.</li>
+            </ul>
+        </section>
+
+        <section class="destination-gallery">
+            
+            <div class="gallery">
+                <img src="imagenes1/GettyImages-860225676.webp" alt="Vista de las Torres del Paine">
+                <img src="imagenes1/istockphoto-1282111989-612x612.jpg" alt="Guanacos en el parque">
+                <img src="imagenes1/bajoherogrey2.jpg" alt="Glaciar Grey">
+                <img src="imagenes1/50a1252cc3f925da6faecac3741e19bb.webp" alt="Lago Pehoé">
+            </div>
+        </section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valle de la Luna</title>
+    <link rel="stylesheet" href="estilos-valle.css">
+</head>
+<body>
+    <section class="destination-cta">
+        <h2>¡Planea tu visita ahora!</h2>
+        <p>No te pierdas la oportunidad de explorar este increíble destino.</p>
+        <button class="btn contact-btn" onclick="abrirFormulario()">Contáctanos</button>
+    </section>
+
+    <!-- Formulario emergente -->
+    <div class="contact-form" id="contactForm">
+        <form>
+            <h2>Contáctanos</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="button" class="close-form" onclick="cerrarFormulario()">Cerrar</button>
+        </form>
+    </div>
+
+    <script>
+        function abrirFormulario() {
+            document.getElementById('contactForm').style.display = 'flex';
+        }
+
+        function cerrarFormulario() {
+            document.getElementById('contactForm').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+<footer class="destination-footer">
+    <p>&copy; 2024 Horizontes. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
